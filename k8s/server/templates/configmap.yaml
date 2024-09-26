@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  MONGO_HOSTNAME: "db-mongodb-replicaset-0.db-mongodb-replicaset.default.svc.cluster.local,db-mongodb-replicaset-1.db-mongodb-replicaset.default.svc.cluster.local,db-mongodb-replicaset-2.db-mongodb-replicaset.default.svc.cluster.local"  
+  MONGO_PORT: "27017"
+  MONGO_DB: "2DWebGame"
+  MONGO_REPLICASET: "db"
+  SECURE_COOKIE: "false"

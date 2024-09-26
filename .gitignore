@@ -1,0 +1,17 @@
+# Of course ignore the node_modules and .next folder
+node_modules/
+.next/
+
+# Should probably ignore these two files inside git/info/exclude instead,
+# since not everyone has these two files for some reason and want to ignore them😂
+/help.txt
+/ideas.txt
+
+# dotenv file
+.env
+
+# The JWT keys
+*.pem
+
+# secret yaml environment variables file for production for k8s
+secret.yaml
